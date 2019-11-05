@@ -1,0 +1,566 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+/* First Part */
+
+nav {
+  filter: brightness(60%);
+  position: relative;
+  display: block;
+  height: 60vh;
+  background-image: url("photos/workers-807577_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+/* 1.Navigation */
+
+h1,
+h2 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 6.3vw;
+  color: #fefefd;
+  text-shadow: 3px 3px #000c52;
+  height: 12.5vh;
+}
+
+h2 {
+  font-size: 1.2vw;
+  letter-spacing: 0.1em;
+  color: #000c52;
+  font-weight: bolder;
+  text-shadow: 0.3px 0.3px #fefefd;
+  text-decoration: dashed underline;
+  text-decoration-color: #000c52;
+}
+
+#logo {
+  position: absolute;
+  left: 15vw;
+  top: 15vh;
+  width: 20vw;
+  height: 17vh;
+  cursor: default;
+}
+
+span {
+  display: inline-block;
+  transform: rotateY(-190deg);
+  color: #f9b101;
+  text-shadow: 0.5px 0.5px #fefefd;
+  transition: 1s;
+}
+
+span:hover {
+  color: #000c52;
+}
+
+/* 2.Buttons */
+
+#buttons button {
+  font-family: "Turret Road", cursive;
+  position: absolute;
+  height: 5vh;
+  background-color: transparent;
+  font-size: 3vw;
+  border: none;
+  color: #000c52;
+  cursor: pointer;
+  transition: 1s;
+  outline: 0;
+  font-weight: bold;
+}
+
+#btnAbout {
+  left: 40vw;
+  top: 8vh;
+}
+
+#btnAbout:hover {
+  color: #34805a;
+}
+
+#btnWorks {
+  left: 49vw;
+  top: 8vh;
+}
+
+#btnWorks:hover {
+  color: #ffffe3;
+}
+
+#btnConcact {
+  left: 63.8vw;
+  top: 8vh;
+}
+
+#btnConcact:hover {
+  color: #b0b78e;
+}
+
+/* Second Part */
+
+article {
+  font-family: "Turret Road", cursive;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  background-color: #34805a;
+  padding-bottom: 5vh;
+}
+
+h3 {
+  margin-top: 5vh;
+  align-items: center;
+  font-size: 2vw;
+}
+
+ul {
+  font-size: 2vw;
+  cursor: default;
+}
+
+ul:hover {
+  text-decoration-line: underline;
+}
+
+#vContainer {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+}
+
+#myVideo {
+  filter: brightness(60%);
+  object-fit: fill;
+  height: 100%;
+  width: 100%;
+  z-index: -20;
+}
+
+/* Third Part */
+
+/* 1.Pictures Gallery */
+
+#wraper {
+  background-image: url("photos/concrete.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  height: 70vh;
+  padding: 5vw 0;
+}
+
+#gallery {
+  width: 60%;
+  margin: 0 auto;
+
+  /* border: 5px solid black; */
+  overflow: hidden;
+}
+
+#photos-container {
+  display: flex;
+  /* width: 100%;
+  height: 300px; */
+}
+
+#photos-container img {
+  width: 100%;
+  height: 100%;
+}
+
+#PrevButton {
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  top: 210vh;
+  left: 13vw;
+}
+
+#NextButton {
+  position: absolute;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5em;
+  top: 210vh;
+  right: 13vw;
+}
+
+/* 2.Phone Icon */
+
+.burger {
+  position: fixed;
+  bottom: 10vh;
+  left: 5vw;
+  padding: 1vw;
+  cursor: pointer;
+  border: 1vw solid #ec770a;
+  border-radius: 50%;
+  color: #ec770a;
+}
+
+.burger i {
+  animation: ring 3s infinite;
+}
+
+.burger:hover {
+  border: 1vw solid black;
+  color: #bfb9bf;
+  transition: 0.5s linear;
+}
+
+aside {
+  position: fixed;
+  bottom: 13vh;
+  left: -150vw;
+  font-size: 3vw;
+  transition: 0.4s linear;
+}
+
+.burger.active + aside {
+  left: 15vw;
+  color: #ec770a;
+  font-weight: bolder;
+  text-decoration-line: underline;
+  font-family: "Lobster", cursive;
+}
+
+/* 2.Footer */
+footer {
+  height: 50vh;
+  width: 100%;
+  background-color: #b0b78e;
+}
+
+#concact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: "Turret Road", cursive;
+}
+
+#concact h1 {
+  font-size: 6vw;
+  margin: 0 5vw;
+}
+
+#concact h2 {
+  font-size: 1.15vw;
+  margin: 0 5vw;
+}
+
+#concact p {
+  font-size: 2vw;
+  margin: 0.5vw 5vw;
+}
+
+#concact em {
+  font-family: arial;
+  margin: 0 5vw;
+  color: #ec770a;
+  text-decoration-line: underline;
+  font-family: "Lobster", cursive;
+}
+
+@media (max-width: 360px) {
+  #logo {
+    left: 23vw;
+    top: 7vh;
+    width: 70vw;
+    height: 50%;
+  }
+
+  h1 {
+    font-size: 20vw;
+  }
+
+  h2 {
+    font-size: 4vw;
+    text-shadow: none;
+  }
+
+  #buttons button {
+    height: 15vh;
+    font-size: 10vw;
+    color: #3f50c0;
+  }
+
+  #btnAbout {
+    left: 38vw;
+    top: 26vh;
+    color: #34805a;
+  }
+
+  #btnWorks {
+    left: 29vw;
+    top: 35vh;
+    color: #ffffe3;
+  }
+
+  #btnConcact {
+    left: 36vw;
+    top: 45vh;
+    color: #b0b78e;
+  }
+
+  nav {
+    filter: brightness(40%);
+
+    height: 60vh;
+    background-size: 100% 70%;
+    background-position: -15% 0%;
+  }
+
+  h3 {
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  ul {
+    font-size: 5vw;
+    text-align: center;
+  }
+
+  #wraper {
+    height: 45vh;
+    padding: 15vw 0;
+  }
+  #gallery {
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #photos-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #photos-container {
+    height: 45vh;
+  }
+
+  #PrevButton {
+    font-size: 2.5em;
+    top: 195vh;
+    left: 1vw;
+  }
+
+  #NextButton {
+    font-size: 2.5em;
+    top: 195vh;
+    right: 1vw;
+  }
+
+  .burger {
+    font-size: 2.5em;
+    bottom: 10vh;
+    left: 8vw;
+    padding: 3vw;
+    outline: none;
+  }
+
+  .burger:hover {
+    border: 2vw solid #ec770a;
+    color: #ec770a;
+  }
+
+  aside {
+    bottom: 2vh;
+    left: -150vw;
+    font-size: 1.7em;
+    transition: 0.2s linear;
+  }
+
+  .burger.active + aside {
+    left: 5vw;
+  }
+
+  #concact h1 {
+    font-size: 4em;
+    height: 10vh;
+  }
+
+  #concact h2 {
+    font-size: 0.77em;
+    padding-bottom: 2vh;
+  }
+
+  #concact p {
+    font-size: 1.2em;
+  }
+
+  #concact em {
+    font-size: 2em;
+  }
+  footer {
+    height: 36vh;
+    width: 100%;
+    background-color: #b0b78e;
+  }
+}
+
+@media (min-width: 1366px) and (max-width: 1599px) {
+  #gallery {
+    width: 40%;
+    padding: 2vh 0;
+    height: 70vh;
+  }
+
+  #photos-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  #photos-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #PrevButton {
+    font-size: 3.5em;
+  }
+
+  #NextButton {
+    font-size: 3.5em;
+  }
+
+  .burger {
+    font-size: 2.5em;
+    padding: 1vw;
+  }
+
+  .burger.active + aside {
+    left: 20vw;
+  }
+
+  #concact em {
+    font-size: 4em;
+  }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  #gallery {
+    width: 34%;
+    padding: 2vh 0;
+    height: 70vh;
+  }
+
+  #photos-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  #photos-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #PrevButton {
+    font-size: 3.5em;
+  }
+
+  #NextButton {
+    font-size: 3.5em;
+  }
+
+  .burger {
+    font-size: 2.5em;
+    padding: 1vw;
+  }
+
+  .burger.active + aside {
+    left: 20vw;
+  }
+
+  #concact em {
+    font-size: 4em;
+  }
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(0);
+  }
+  5% {
+    transform: rotate(30deg);
+  }
+  10% {
+    transform: rotate(-28deg);
+  }
+  15% {
+    transform: rotate(34deg);
+  }
+  20% {
+    transform: rotate(-32deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  30% {
+    transform: rotate(-28deg);
+  }
+  35% {
+    transform: rotate(26deg);
+  }
+  40% {
+    transform: rotate(-24deg);
+  }
+  45% {
+    transform: rotate(22deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+  55% {
+    transform: rotate(18deg);
+  }
+  60% {
+    transform: rotate(-16deg);
+  }
+  65% {
+    transform: rotate(14deg);
+  }
+  70% {
+    transform: rotate(-12deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-8deg);
+  }
+  85% {
+    transform: rotate(6deg);
+  }
+  90% {
+    transform: rotate(-4deg);
+  }
+  95% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(-1deg);
+  }
+}
