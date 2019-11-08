@@ -421,6 +421,147 @@ footer {
   }
 }
 
+@media (min-width: 700px) and (max-width: 1365px) {
+  #logo {
+    left: 22vw;
+    top: 7vh;
+    width: 70vw;
+    height: 70%;
+  }
+
+  h1 {
+    font-size: 20.2vw;
+    height: 10.5vh;
+  }
+
+  h2 {
+    font-size: 4vw;
+    text-shadow: none;
+  }
+
+  #buttons button {
+    height: 15vh;
+    font-size: 10vw;
+    color: #3f50c0;
+  }
+
+  #btnAbout {
+    left: 37vw;
+    top: 23vh;
+    color: #34805a;
+  }
+
+  #btnWorks {
+    left: 28vw;
+    top: 32vh;
+    color: #ffffe3;
+  }
+
+  #btnConcact {
+    left: 35vw;
+    top: 42vh;
+    color: #b0b78e;
+  }
+
+  nav {
+    filter: brightness(40%);
+
+    height: 60vh;
+    background-size: 100% 70%;
+    background-position: 0% 0%;
+  }
+
+  h3 {
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  ul {
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  #wraper {
+    height: 45vh;
+    padding: 15vw 0;
+  }
+
+  #gallery {
+    width: 75%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #photos-container img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #photos-container {
+    height: 45vh;
+  }
+
+  #PrevButton {
+    font-size: 4em;
+    top: 195vh;
+    left: 1vw;
+  }
+
+  #NextButton {
+    font-size: 4em;
+    top: 195vh;
+    right: 1vw;
+  }
+
+  .burger {
+    font-size: 4.5em;
+    bottom: 10vh;
+    left: 8vw;
+    padding: 3vw;
+    outline: none;
+  }
+
+  .burger:hover {
+    border: 2vw solid #ec770a;
+    color: #ec770a;
+  }
+
+  aside {
+    bottom: 2vh;
+    left: -150vw;
+    font-size: 3.6em;
+    transition: 0.2s linear;
+  }
+
+  .burger.active+aside {
+    left: 2vw;
+  }
+
+  #concact h1 {
+    font-size: 8em;
+    height: 8.5vh;
+  }
+
+  #concact h2 {
+    font-size: 1.5em;
+    padding-bottom: 2vh;
+  }
+
+  #concact p {
+    font-size: 2em;
+  }
+
+  #concact em {
+    font-size: 5em;
+  }
+
+  footer {
+    height: 36vh;
+    width: 100%;
+    background-color: #b0b78e;
+  }
+}
+
 @media (min-width: 1366px) and (max-width: 1599px) {
   #gallery {
     width: 40%;
